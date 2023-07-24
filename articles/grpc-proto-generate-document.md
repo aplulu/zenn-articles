@@ -40,7 +40,7 @@ Notionやesaなどのドキュメントツールに記載している方も多�
 └─　README.md
 ```
 
-# GitHub ActionsのWorkflow用意
+## GitHub ActionsのWorkflow用意
 
 ドキュメント生成とデプロイを行うGitHub ActionsのWorkflowを用意します。
 下記のWorkflowをリポジトリの`.github/workflows/generate-document.yml`に配置してください。
