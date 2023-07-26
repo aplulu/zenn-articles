@@ -1,5 +1,5 @@
 ---
-title: gRPC/Protocol Buffersのドキュメントを生成してGitHub Pagesに自動デプロイする
+title: gRPC/Protocol BuffersのAPIドキュメントを自動生成してGitHub Pagesに継続的デプロイする
 emoji: "📖"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [ "grpc", "protocolbuffers", "githubactions", "githubpages", "ci" ]
@@ -8,7 +8,7 @@ published: true
 
 皆さんはgRPC/Protocol BuffersのAPI仕様書などをどのように管理されていますか？
 Notionやesaなどのドキュメントツールに記載している方も多いと思いますが、バージョン管理されているprotoファイルとの整合性を保つのは大変ですよね。
-今回は[protoc-gen-doc](https://github.com/pseudomuto/protoc-gen-doc)を使用してリポジトリ内のprotoファイルからドキュメントを自動生成し、GitHub Pagesにデプロイする方法を紹介します。
+今回は[protoc-gen-doc](https://github.com/pseudomuto/protoc-gen-doc)を使用してリポジトリ内のprotoファイルからAPIドキュメントを生成し、GitHub Pagesに継続的デプロイする方法を紹介します。
 
 ![Protocol Documentation](/images/grpc-proto-generate-document/document_300w.jpg)
 
