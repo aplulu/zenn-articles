@@ -12,7 +12,7 @@ Google Cloud NextでMemorystore for Redis Clusterがアナウンスされたの�
 
 [Announcing Memorystore for Redis Cluster: Up to 60x more throughput, with microseconds latencies](https://cloud.google.com/blog/products/databases/memorystore-for-redis-cluster-launched)
 
-今回はCloud Runから[先日PreviewとなったDirect VPC egress](https://cloud.google.com/run/docs/configuring/vpc-direct-vpc)を使用して、Memorystore for Redis Clusterにアクセスしてみます。
+今回はCloud Runから先日Previewとなった[Direct VPC egress](https://cloud.google.com/run/docs/configuring/vpc-direct-vpc)を使用して、Memorystore for Redis Clusterにアクセスしてみます。
 
 # Memorystore for Redis Clusterの作成
 
@@ -159,7 +159,20 @@ $ gcloud alpha run deploy ${GCP_RUN_SERVICE_NAME} \
 ![counter](/images/gcp-memorystore-redis-cluster/counter.png)
 
 問題なくアクセスできました！ 
-リロードするとカウンターが増えていることが確認できます。
+リロードするとカウンターが増加することが確認できます。
+
+# あとかたづけ
+
+最後に作成したリソースを削除します。
+
+```shell
+$ gcloud alpha run services delete ${GCP_RUN_SERVICE_NAME} \
+    --project=${GCP_PROJECT_ID} \
+    --region=${GCP_REGION}
+$ gcloud alpha redis clusters delete default \
+    --region=${GCP_REGION} \
+    --project=${GCP_PROJECT_ID}
+```
 
 # まとめ
 
