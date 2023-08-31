@@ -14,7 +14,7 @@ Google Cloud NextでMemorystore for Redis Clusterがアナウンスされたの�
 
 今回はCloud Runから[先日PreviewとなったDirect VPC egress](https://cloud.google.com/run/docs/configuring/vpc-direct-vpc)を使用して、Memorystore for Redis Clusterにアクセスしてみます。
 
-# Redis Cluster for Memorystoreの作成
+# Memorystore for Redis Clusterの作成
 
 最初にClusterを作成します。
 
