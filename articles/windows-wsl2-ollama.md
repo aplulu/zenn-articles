@@ -1,5 +1,5 @@
 ---
-title: WSL2上でOllamaを使ってローカルLLMを推論実行する
+title: WSL2上でOllamaとopen-webuiを使ったローカルでのLLMの推論実行環境を構築する
 emoji: "🤖"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: [ "windows", "wsl", "ollama", "llm" ]
@@ -16,6 +16,8 @@ WSL2上でOllamaを使ってローカルLLMを推論実行する方法を紹介�
 同時に[open-webui](https://github.com/open-webui/open-webui)を使用して、一般的なLLMサービスと同様にブラウザから気軽にLLMを実行できる環境を構築します。
 
 おうちにゲーミングPCやNVIDIA GPUを搭載したPCがある方におすすめです。
+
+https://www.youtube.com/watch?v=92CPxX22vBE
 
 # 前提環境
 
